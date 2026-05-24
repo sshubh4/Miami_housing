@@ -1,13 +1,13 @@
 # Miami Housing Price Intelligence
 
-[![Live Demo](https://img.shields.io/badge/demo-live-00ff87?style=flat-square)](https://miami-housing.vercel.app)
+[![Live Demo](https://img.shields.io/badge/demo-live-00ff87?style=flat-square)](https://miami-price-prediction.vercel.app)
 [![CI](https://github.com/sshubh4/Miami_housing/actions/workflows/ci.yml/badge.svg)](https://github.com/sshubh4/Miami_housing/actions)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue?style=flat-square)](https://www.python.org/)
 [![React 18](https://img.shields.io/badge/React-18-61dafb?style=flat-square)](https://react.dev/)
 
 ![Miami Housing Price Intelligence](docs/screenshot.png)
 
-**[Live Demo →](https://miami-housing.vercel.app)**
+**[Live Demo →](https://miami-price-prediction.vercel.app)**
 
 A production-grade geospatial ML app that predicts real-estate sale prices across Miami-Dade County. Click anywhere on the interactive dark map to get an instant XGBoost price estimate, confidence range, and nearby comparable sales. The model is trained on 13,932 transactions with 20 engineered features and achieves R²=0.826 on held-out data and CV R²=0.931 across five folds.
 

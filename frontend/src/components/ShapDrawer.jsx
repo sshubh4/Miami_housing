@@ -80,7 +80,7 @@ export default function ShapDrawer({ open, onToggle, shapData }) {
           style={{ transform: open ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }}>
           <path d="M2 6l3-3 3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
-        SHAP IMPORTANCE
+        SHAP IMPORTANCE (Why this price?)
       </button>
 
       {/* Drawer */}

@@ -1,9 +1,10 @@
-function Chip({ label, value, loading, secondary, extraClass }) {
+function Chip({ label, value, loading, secondary, extraClass, title }) {
   const cls = ['stats-chip', secondary && 'stats-chip-secondary', extraClass].filter(Boolean).join(' ')
   return (
     <div
       className={cls}
-      style={{
+      title={title}
+      style={{ cursor: title ? 'help' : 'default',
         display: 'flex', flexDirection: 'column', alignItems: 'center',
         padding: '0 14px',
         borderRight: '1px solid var(--border)',
@@ -52,9 +53,9 @@ export default function StatsBar({ metrics, total, medianPrice, loading }) {
       </div>
 
       <Chip label="Dataset"      value={total ? `${total.toLocaleString()} sales` : '—'} loading={loading} extraClass="stats-chip-dataset" />
-      <Chip label="Model R²"     value={metrics ? metrics.r2.toFixed(3) : '—'}           loading={loading} />
-      <Chip label="CV R²"        value={metrics?.cv_r2_mean ? metrics.cv_r2_mean.toFixed(3) : '—'} loading={loading} secondary />
-      <Chip label="MAE"          value={metrics ? `$${(metrics.mae / 1000).toFixed(1)}k` : '—'} loading={loading} secondary />
+      <Chip label="Model R²"     value={metrics ? metrics.r2.toFixed(3) : '—'}           loading={loading} title="R-squared: % of price variance explained by the model" />
+      <Chip label="CV R²"        value={metrics?.cv_r2_mean ? metrics.cv_r2_mean.toFixed(3) : '—'} loading={loading} secondary title="Cross-validated R²: accuracy across 5 data splits" />
+      <Chip label="MAE"          value={metrics ? `$${(metrics.mae / 1000).toFixed(1)}k` : '—'} loading={loading} secondary title="Mean Absolute Error: average prediction error in dollars" />
       <Chip label="Median Price" value={medianPrice ? `$${(medianPrice / 1000).toFixed(0)}k` : '—'} loading={loading} secondary />
 
       <div style={{ paddingLeft: 12, paddingRight: 6, flexShrink: 0 }}>

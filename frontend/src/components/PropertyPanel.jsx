@@ -161,6 +161,22 @@ export default function PropertyPanel({ form, onChange, metrics, loading }) {
               {' '}· CV {metrics.cv_r2_mean?.toFixed(3)}
             </div>
           ) : null}
+
+          {/* Glossary */}
+          <div style={{
+            marginTop: 12,
+            paddingTop: 10,
+            borderTop: '1px solid var(--border)',
+            fontSize: 9,
+            lineHeight: 1.9,
+            color: 'rgba(0,255,135,0.4)',
+            fontFamily: 'var(--mono)',
+          }}>
+            <div>SHAP = model explainability score</div>
+            <div>CBD = Central Business District</div>
+            <div>CV R² = cross-validated accuracy</div>
+            <div>MAE = mean prediction error</div>
+          </div>
         </>
       )}
     </div>

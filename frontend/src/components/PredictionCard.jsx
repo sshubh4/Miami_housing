@@ -67,10 +67,10 @@ export default function PredictionCard({ prediction, latlng, loading, form }) {
           <div style={{ marginBottom: 10 }}>
             <Stat label="Coordinates"
               value={`${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)}`} />
-            <Stat label="Ocean Distance"
+            <Stat label="Ocean Distance (to nearest coastline)"
               value={`${(prediction.ocean_dist_m / 1000).toFixed(2)} km${prediction.is_coastal ? '  ◆ coastal' : ''}`}
               accent={prediction.is_coastal} />
-            <Stat label="CBD Distance"
+            <Stat label="CBD Distance (to Miami city centre)"
               value={`${(prediction.cntr_dist_m / 1000).toFixed(2)} km`} />
           </div>
 
