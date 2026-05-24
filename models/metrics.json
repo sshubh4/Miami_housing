@@ -1,0 +1,32 @@
+{
+  "r2": 0.826,
+  "mae": 30844.65,
+  "rmse": 45167.54,
+  "n_train": 11145,
+  "n_val": 2787,
+  "feature_cols": [
+    "LND_SQFOOT",
+    "TOT_LVG_AREA",
+    "SPEC_FEAT_VAL",
+    "RAIL_DIST",
+    "OCEAN_DIST",
+    "WATER_DIST",
+    "CNTR_DIST",
+    "SUBCNTR_DI",
+    "HWY_DIST",
+    "age",
+    "avno60plus",
+    "structure_quality",
+    "month_sold",
+    "log_ocean_dist",
+    "log_cntr_dist",
+    "land_to_living",
+    "is_coastal",
+    "cbd_access",
+    "peak_season",
+    "noise_penalty"
+  ],
+  "best_iteration": 174,
+  "cv_r2_mean": 0.9312,
+  "cv_r2_std": 0.0021
+}

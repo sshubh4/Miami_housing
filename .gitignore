@@ -1,0 +1,43 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+.venv/
+venv/
+.env
+.env.local
+.env.*.local
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Node / frontend build ─────────────────────────────────────────────────────
+node_modules/
+dist/
+frontend/dist/
+frontend/.vite/
+
+# ── OS / editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ── Archives ──────────────────────────────────────────────────────────────────
+*.tar.gz
+*.zip
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+
+# ── Model artifacts — MUST be committed for Railway to serve predictions ──────
+!models/xgb_model.pkl
+!models/metrics.json
+
+# ── Dataset — force-include so CI and Railway can retrain ────────────────────
+!data/miami-housing.csv
