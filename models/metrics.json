@@ -1,7 +1,7 @@
 {
-  "r2": 0.826,
-  "mae": 30844.65,
-  "rmse": 45167.54,
+  "r2": 0.8152,
+  "mae": 31706.84,
+  "rmse": 46545.27,
   "n_train": 11145,
   "n_val": 2787,
   "feature_cols": [
@@ -26,7 +26,7 @@
     "peak_season",
     "noise_penalty"
   ],
-  "best_iteration": 174,
-  "cv_r2_mean": 0.9312,
-  "cv_r2_std": 0.0021
+  "best_iteration": 169,
+  "cv_r2_mean": 0.9314,
+  "cv_r2_std": 0.0025
 }
